@@ -76,8 +76,8 @@ public class CatalogController {
 				})
 				.collect(Collectors.toList());*/
 			
-	/*	@RequestMapping("/{userId}")
-		public List<CatalogItem> getCatalog(@PathVariable(value="userId") String userId){
+		/*@RequestMapping("/{userId}")
+		public List<CatalogItem> getCatalog1(@PathVariable(value="userId") String userId){
 			List<Rating> ratings1=restTemplate.getForObject("http://localhost:9090/rating/users/" +userId, UserRating.class).getUserRating();
 			return ratings1.stream().map(rating ->{
 				final String uri ="http://localhost:9092/movie/movieId";
